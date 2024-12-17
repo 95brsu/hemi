@@ -19,7 +19,7 @@ chmod +x ./popmd
 cat ~/hemi-keys/popm-address$num_p.json
 
 show "Автоматическое присваивание переменных из JSON..."
-eval $(jq -r '. | "ETHEREUM_ADDRESS$num_p=\(.ethereum_address)\nNETWORK=\(.network)\nPRIVATE_KEY$num_p=\(.private_key)\nPUBLIC_KEY$num_p=\(.public_key)\nPUBKEY_HASH$num_p=\(.pubkey_hash)"' ~/hemi-keys/popm-address$num_p.json)
+eval $(jq -r '. | "ETHEREUM_ADDRESS$num_p=\(.ethereum_address)\nNETWORK=\(.network)\nPRIVATE_KEY$num_p=\(.private_key)\nPUBLIC_KEY$num_p=\(.public_key)\nPUBKEY_HASH$num_p=\(.pubkey_hash)"' ~/hemi-keys/popm-address"$num_p".json)
 
 show "Вывод переменных..."
 echo "Ethereum Address: $ETHEREUM_ADDRESS$num_p"
