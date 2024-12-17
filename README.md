@@ -3,7 +3,7 @@
 
 ### 1. Копировать и ввести в консоль
 ```shell
-curl -s https://raw.githubusercontent.com/95brsu/hemi/refs/heads/main/install_hemi.sh > install_hemi.sh && chmod +x install_hemi.sh && ./install_hemi.sh
+curl -s https://raw.githubusercontent.com/95brsu/hemi/refs/heads/main/install.sh > install.sh && chmod +x install.sh && ./install.sh
 ```
 ### 2. Копировать, поменять № на ваш номер и ввести в консоль
 ```shell
