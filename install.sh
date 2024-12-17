@@ -21,4 +21,4 @@ cat ~/hemi-keys/popm-address$num_p.json
 
 
 show "Запросите тестовые токены tBTC3 на адрес pubkey_hash"
-show "Продолжите установку следую инструкциям из README"
+show "Продолжите установку, следуя инструкциям из README"
