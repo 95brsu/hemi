@@ -14,5 +14,5 @@ chmod +x ./popmd
 ./keygen -secp256k1 -json -net="testnet" > ~/hemi-keys/popm-address$num_p.json
 cat ~/hemi-keys/popm-address$num_p.json
 
-echo "Запросите тестовые токены tBTC3 на адрес "
+echo "Запросите тестовые токены tBTC3 на адрес pubkey_hash"
 echo "Продолжите установку следую инструкциям из README"
