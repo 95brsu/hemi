@@ -1,9 +1,13 @@
 #!/bin/bash
-
-echo "Введите номер ноды?"
+show() {
+    # ANSI код для желтого цвета: \033[33m
+    # Сброс цвета: \033[0m
+    echo -e "\033[33m$1\033[0m"
+}
+show "Введите номер ноды?"
 read num_p
 
-echo "Установка ноды HEMI... $num_p "
+show "Установка ноды HEMI... $num_p "
 mkdir -p hemi-keys
 mkdir Hemi-Node$num_p && cd Hemi-Node$num_p
 wget https://github.com/hemilabs/heminetwork/releases/download/v0.8.0/heminetwork_v0.8.0_linux_amd64.tar.gz
